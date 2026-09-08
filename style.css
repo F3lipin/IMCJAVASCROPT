@@ -26,7 +26,6 @@ h1 {
     font-size: 32px;
 }
 
-/* Caixa principal */
 body > label,
 body > input,
 body > button {
@@ -86,4 +85,66 @@ button:hover {
 button:active {
     transform: translateY(0);
 }
+
+#resultado {
+    width: 320px;
+    margin-top: 25px;
+    padding: 20px;
+
+    text-align: center;
+
+    background: #ffffff;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    animation: aparecer 0.4s ease;
+}
+
+/* Título "Resultado" */
+#resultado h2 {
+    margin-bottom: 10px;
+
+    color: #667eea;
+    font-size: 24px;
+}
+
+/* Texto "Seu IMC é:" */
+#resultado p {
+    margin: 5px 0;
+
+    color: #555;
+    font-size: 16px;
+}
+
+/* Número do IMC */
+#resultado strong {
+    display: block;
+
+    margin: 8px 0;
+
+    color: #764ba2;
+    font-size: 42px;
+}
+
+#resultado .classificacao {
+    margin-top: 10px;
+
+    color: #333;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
